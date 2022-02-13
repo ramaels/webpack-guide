@@ -2,9 +2,10 @@
   "name": "webpack-guide",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,18 @@
   },
   "homepage": "https://github.com/ramaels/webpack-guide#readme",
   "devDependencies": {
+    "css-loader": "^6.5.1",
+    "csv-loader": "^3.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "json5": "^2.2.0",
+    "style-loader": "^3.3.1",
+    "toml": "^3.0.0",
     "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "xml-loader": "^1.2.1",
+    "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
