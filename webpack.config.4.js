@@ -5,15 +5,21 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
+        another: './src/another-module.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Dynamic Imports',
+            title: 'Code splitting',
         }),
     ],
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
     },
 };
